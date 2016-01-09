@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+$body-bg : #ecf0f1
+$jumbotron-bg: white;
+
+@import "bootstrap";
+
+.center {
+  text-align :center;
+}
+.navbar-brand {
+  font-weight :bold;
+}

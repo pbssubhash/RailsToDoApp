@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>Honest</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pers.each do |per| %>
+      <tr>
+        <td><%= per.person %></td>
+        <td><%= per.honest %></td>
+        <td><%= link_to 'Show', per %></td>
+        <td><%= link_to 'Edit', edit_per_path(per) %></td>
+        <td><%= link_to 'Destroy', per, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Per', new_per_path %>
