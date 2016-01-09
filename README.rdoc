@@ -1,28 +1,27 @@
 == README
+Just clone the repo <br>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ git clone https://github.com/pbssubhash/RailsToDoApp.git
+ 
+Navigate into the folder 
+ 
+  cd RailsToDoApp/
+  
+Use this command to start the server
+  
+   rails s
+   
+P.S. Make sure you set the username and password in Database.yml file and also ensure that database exists before running it.
 
-Things you may want to cover:
+Then run migrations
+  rake db:migrate
 
-* Ruby version
+Dependencies ( On which this app was tested ) :
 
-* System dependencies
+* Ruby version - ruby 2.2.1p85
 
-* Configuration
+* Database creation - This application uses Postgresql, So Make sure you create one :) 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Feel free to fork it and use your creativity. This was created to be very simple and it is :) 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
